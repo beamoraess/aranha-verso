@@ -91,17 +91,3 @@ Caso a porta 3000 estiver em uso, automaticamente o Next.js irá subir na próxi
 Se deseja alterar a porta padrão na qual a aplicação tentará subir, você pode modificar a porta no arquivo `next.config.js`.
 
 Agora você está pronto para explorar o projeto em seu ambiente local!
-
-## 👩‍💻 Autora
-
-<p>
-    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/55519539?v=4"/>
-    <p>&nbsp&nbsp&nbspMichele Queiroz Ambrosio<br>
-    &nbsp&nbsp&nbsp<a href="http://instagram.com/programi_">Instagram</a>&nbsp;|&nbsp;<a href="https://github.com/micheleambrosio">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/michele-ambrosio-a4899661/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://www.twitch.tv/michele_ambrosio">Twitch</a></p>
-</p>
-<br/><br/>
-<p>
-
----
-
-⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊
