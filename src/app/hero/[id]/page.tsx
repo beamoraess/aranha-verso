@@ -1,4 +1,3 @@
-
 import Carousel from "@/components/Carousel";
 import { IHeroData } from "@/interfaces/heroes";
 
@@ -9,7 +8,8 @@ interface IProps {
 }
 
 async function getData(): Promise<{ data: IHeroData[] }> {
-  const res = await fetch("http://localhost:3000/api/heroes");
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL; // Pegue a URL da API das variáveis de ambiente
+  const res = await fetch(`${apiUrl}/api/heroes`); // Use a URL configurada
 
   if (!res.ok) {
     throw new Error("Falha ao buscar heróis");
