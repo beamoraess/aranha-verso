@@ -8,11 +8,7 @@ interface IProps {
 }
 
 async function getData(): Promise<{ data: IHeroData[] }> {
-  const baseUrl =
-    process.env.NODE_ENV === "production"
-      ? `https://${process.env.VERCEL_URL}`
-      : "http://localhost:3000";
-
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
   const res = await fetch(`${baseUrl}/api/heroes`);
 
   if (!res.ok) {
