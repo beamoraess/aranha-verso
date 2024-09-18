@@ -8,8 +8,12 @@ interface IProps {
 }
 
 async function getData(): Promise<{ data: IHeroData[] }> {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL; // Pegue a URL da API das variáveis de ambiente
-  const res = await fetch(`${apiUrl}/api/heroes`); // Use a URL configurada
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000";
+
+  const res = await fetch(`${baseUrl}/api/heroes`);
 
   if (!res.ok) {
     throw new Error("Falha ao buscar heróis");
